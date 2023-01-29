@@ -5,7 +5,7 @@ import { BsPersonLinesFill } from "react-icons/bs";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="main" className="w-full h-screen text-center">
       <div className="max-w-[1248px] w-full h-full mx-auto flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
@@ -21,7 +21,7 @@ const Main = () => {
             control tool and handling multiple VPS with Node.js backend. Create
             & maintain RPC blockhain node also AWS Lambda using Cloudformation
             and Serverless Framework. Also learning to be Fullstack developer
-            with backend focused.
+            with Backend focused.
           </p>
           <div className="flex items-center justify-between max-w-[338px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">

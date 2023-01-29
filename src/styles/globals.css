@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Agustina Regular";
-  src: local("Agustina Regular"), url("../../public/assets/fonts/Agustina.woff");
+  src: local("Agustina Regular"), url("../assets/fonts/Agustina.woff");
   font-display: swap;
 }
 /* @font-face {
@@ -34,6 +38,10 @@
 
   h2 {
     @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
   }
 
   li {
