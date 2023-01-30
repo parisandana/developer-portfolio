@@ -1,6 +1,6 @@
 import React from "react";
 import DisplayLottie from "./DisplayLottie";
-import contactMail from "@/assets/lottie/email";
+import contactPerson from "@/assets/lottie/landingPerson";
 import ConnectIcon from "./ConnectIcon";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -19,12 +19,11 @@ const Contact = () => {
             <div className="lg:p-4 h-full">
               <div>
                 <div className="rounded-xl hover:scale-105 ease-in duration-300 w-full h-auto">
-                  <DisplayLottie animationData={contactMail} />
+                  <DisplayLottie animationData={contactPerson} />
                 </div>
-                {/* <img className="rounded-xl hover:scale-105 ease-in duration-300" src="" alt="/" /> */}
               </div>
               <div>
-                <h3 className="py-2">Paris Andana</h3>
+                <h2 className="py-2">Paris Andana</h2>
                 <p>Fullstack Developer & DevOps</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
@@ -32,13 +31,15 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8 lg:pt-16">Connect With Me</p>
+                <p className="uppercase pt-8 lg:pt-16 text-[#5651e5]">
+                  Connect With Me
+                </p>
                 <ConnectIcon cName={"flex items-center justify-between py-4"} />
               </div>
             </div>
           </div>
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 counded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -89,7 +90,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="animate-bounce rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
           </Link>

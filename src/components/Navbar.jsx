@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-10 2xl:px-16 font">
         <Link href="/" className="text-2xl">
           <span className="text-[#868e96]">&lt;</span>
-          <span className="font-bold font-agustina p-2.5 pt-2 text-3xl text-[#551a8B] dark:text-white">
+          <span className="font-bold font-agustina p-2.5 pt-2 text-3xl text-[#551a8B]">
             Paris Andana
           </span>
           <span className="text-[#868e96]">/&gt;</span>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/#projects">
@@ -94,7 +94,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 h-screen bg-[#ecf0f3] py-10 pl-10 ease-in duration-500"
           }
         >
           <div>
@@ -124,16 +124,16 @@ const Navbar = () => {
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
@@ -143,7 +143,7 @@ const Navbar = () => {
               </p>
               <ConnectIcon
                 cName={
-                  "flex items-center justify-between my-4 w-full sm:w-[80%]"
+                  "flex flex-wrap items-center justify-between my-4 w-full sm:w-[80%]"
                 }
               />
             </div>

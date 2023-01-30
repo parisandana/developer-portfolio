@@ -9,8 +9,10 @@ specifiers:
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  react-easy-emoji: ^1.8.1
   react-icons: ^4.7.1
   react-lottie: ^1.2.3
+  react-reveal: ^1.2.2
   tailwindcss: ^3.2.4
 
 dependencies:
@@ -20,8 +22,10 @@ dependencies:
   next: 13.1.2_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-easy-emoji: 1.8.1_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
   react-lottie: 1.2.3_react@18.2.0
+  react-reveal: 1.2.2_react@18.2.0
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -1997,6 +2001,19 @@ packages:
       scheduler: 0.23.0
     dev: false
 
+  /react-easy-emoji/1.8.1_react@18.2.0:
+    resolution: {integrity: sha512-wAf2x+cjwtOlLfXnjc0J3k5B2PDZdoxd1BjtfKr5tq2AL7t2ygvByJQWgFOyN28xg3qe8EKBM6pKxGP+qrGWuQ==}
+    peerDependencies:
+      '@types/react': '>=0.14.0'
+      react: '>=0.14.27'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      react: 18.2.0
+      string-replace-to-array: 2.1.0
+    dev: false
+
   /react-icons/4.7.1_react@18.2.0:
     resolution: {integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==}
     peerDependencies:
@@ -2017,6 +2034,15 @@ packages:
     dependencies:
       babel-runtime: 6.26.0
       lottie-web: 5.10.2
+      react: 18.2.0
+    dev: false
+
+  /react-reveal/1.2.2_react@18.2.0:
+    resolution: {integrity: sha512-JCv3fAoU6Z+Lcd8U48bwzm4pMZ79qsedSXYwpwt6lJNtj/v5nKJYZZbw3yhaQPPgYePo3Y0NOCoYOq/jcsisuw==}
+    peerDependencies:
+      react: ^15.3.0 || ^16.0.0
+    dependencies:
+      prop-types: 15.8.1
       react: 18.2.0
     dev: false
 
@@ -2166,6 +2192,10 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       internal-slot: 1.0.4
+    dev: false
+
+  /string-replace-to-array/2.1.0:
+    resolution: {integrity: sha512-xG2w4fE5FsTXS4AFxoF3uctByqTIFBX8lFRNcPcIznTVCMXbYvbatkPVLpAo13tfuWtzbWEV6u5bjoE9bOv87w==}
     dev: false
 
   /string.prototype.matchall/4.0.8:
