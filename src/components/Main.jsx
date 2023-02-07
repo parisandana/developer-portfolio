@@ -33,7 +33,7 @@ const Main = () => {
             </p>
             <ConnectIcon
               cName={
-                "flex flex-wrap items-center justify-between max-w-[388px] m-auto py-4"
+                "flex flex-wrap items-center justify-between max-w-[388px] m-auto py-4 overflow-auto"
               }
             />
           </div>

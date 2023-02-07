@@ -9,7 +9,7 @@ import { contactInfo } from "@/portfolio";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen pt-16">
       <div className="max-w-[1240px] m-auto px-2 pt-16 w-full">
         <Fade left duration={1000}>
           <p className="text-xl tracking-widest uppercase text-[#5651e5]">
@@ -40,7 +40,9 @@ const Contact = () => {
                     Connect With Me
                   </p>
                   <ConnectIcon
-                    cName={"flex items-center justify-between pt-4"}
+                    cName={
+                      "flex items-center justify-between pt-4 overflow-auto"
+                    }
                   />
                 </div>
               </div>

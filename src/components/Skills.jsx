@@ -8,7 +8,7 @@ import codingPerson from "@/assets/lottie/codingPerson";
 const Skills = () => {
   return (
     <div
-      className="w-[90%] p-[20px_10px] m-[0px_auto] py-16 grid lg:grid-cols-5 gap-8"
+      className="w-[90%] p-[20px_10px] m-[0px_auto] py-16 pt-32 grid lg:grid-cols-5 gap-8"
       id="skills"
     >
       <div className="col-span-3 md:col-span-2 w-full overflow-hidden">
