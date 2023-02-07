@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import ConnectIcon from "./ConnectIcon";
 import { useRouter } from "next/router";
+import { greeting } from "@/portfolio";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -64,23 +65,19 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase">Home</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase">Skills</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
+              <li className="ml-10 text-sm uppercase">Projects</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
+              <li className="ml-10 text-sm uppercase">Contact</li>
+            </Link>
+            <Link href={greeting.resumeLink} target="_blank">
+              <li className="ml-10 text-sm uppercase">Resume</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
@@ -126,9 +123,6 @@ const Navbar = () => {
             <ul className="uppercase">
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
-              </Link>
-              <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
               </Link>
               <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>

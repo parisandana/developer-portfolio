@@ -1,10 +1,8 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsPersonLinesFill } from "react-icons/bs";
 import ConnectIcon from "./ConnectIcon";
+import { greeting } from "@/portfolio";
 
 const Main = () => {
   return (
@@ -16,7 +14,8 @@ const Main = () => {
               Let&apos;s build something together.
             </p>
             <h1 className="py-4 text-gray-700">
-              Hi, I&apos;m <span className="text-[#551a8B]">Paris</span>{" "}
+              Hi, I&apos;m{" "}
+              <span className="text-[#551a8B]">{greeting.username}</span>{" "}
               <span className="animate-wave inline-block origin-[70%_70%]">
                 {emoji("👋")}
               </span>

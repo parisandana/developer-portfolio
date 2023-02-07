@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import propertyImg from "@/assets/projects/property.jpg";
 
 // Splash Screen
 
@@ -20,7 +21,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Paris Andana",
+  username: "Paris",
   title: "Hi all, I'm Paris",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
@@ -52,11 +53,11 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Create highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Develop backend with third party integration"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Deployment in many cloud service such as Google Cloud Platform / AWS / Digital Ocean"
     ),
   ],
 
@@ -93,10 +94,6 @@ https://fontawesome.com/icons?d=gallery */
       skillClass: "fab fa-linux",
     },
     {
-      skillName: "NPM",
-      skillClass: "fab fa-npm",
-    },
-    {
       skillName: "SQL-DB",
       skillClass: "fas fa-database",
     },
@@ -126,6 +123,53 @@ https://fontawesome.com/icons?d=gallery */
     },
   ],
   display: true, // Set false to hide this section, defaults to true
+};
+
+const project = {
+  experience: [
+    {
+      title: "Neftipedia Explorer",
+      backgroundImg: require("@/assets/projects/neftipedia-explore.png"),
+      projectUrl: "explore.neftipedia.com",
+      tech: "Nextjs, Nodejs",
+      desc: "Browser Web3 Dapp for NFT marketplace",
+    },
+    {
+      title: "Neftipedia Web",
+      backgroundImg: require("@/assets/projects/neftipedia-web.png"),
+      projectUrl: "neftipedia.com",
+      tech: "HTML, CSS, Nodejs",
+      desc: "Landing page for token and NFT marketplace",
+    },
+    {
+      title: "Doiit Web",
+      backgroundImg: require("@/assets/projects/dooit-web.png"),
+      projectUrl: "tokendooit.com",
+      tech: "HTML, CSS, Nodejs",
+      desc: "Landing page for token DOOiT",
+    },
+    {
+      title: "Wildduck Mailserver",
+      backgroundImg: require("@/assets/projects/wildduck-mailserver.png"),
+      projectUrl: "mail.neftibook.com",
+      tech: "Javascript",
+      desc: "Mail server deployed using Wildduck Open Source",
+    },
+    {
+      title: "Pegasus Asia",
+      backgroundImg: require("@/assets/projects/pegasus-asia.png"),
+      projectUrl: "pegasusasia.co",
+      tech: "HTML, CSS, Nodejs",
+      desc: "Landing page for travel agency",
+    },
+    {
+      title: "Pundi Duta",
+      backgroundImg: require("@/assets/projects/pundi-duta.png"),
+      projectUrl: "pundi-duta.com",
+      tech: "Strapi, Nodejs",
+      desc: "Backend and admin panel for redeem voucher mobbile app",
+    },
+  ],
 };
 
 // Education Section
@@ -353,11 +397,11 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me  ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com",
+    "I am available for freelance or full-time positions. Contact me and let's talk.",
+  number: "+62 851 597 597 93",
+  email_address: "parisandana2@gmail.com",
 };
 
 // Twitter Section
@@ -387,4 +431,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
+  project,
 };
