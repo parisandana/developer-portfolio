@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         agustina: ["Agustina Regular"],
+        montserrat: ["Montserrat"],
       },
       animation: {
         wave: "wave 1800ms infinite",

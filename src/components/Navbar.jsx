@@ -41,8 +41,11 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
+  const contact = document.getElementById("contact");
+
   return (
     <div
+      id="navbar"
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow

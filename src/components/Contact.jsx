@@ -8,7 +8,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+      <div className="max-w-[1240px] m-auto px-2 pt-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
@@ -31,23 +31,28 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8 lg:pt-16 text-[#5651e5]">
+                <p className="uppercase pt-8 lg:pt-10 text-[#5651e5]">
                   Connect With Me
                 </p>
-                <ConnectIcon cName={"flex items-center justify-between py-4"} />
+                <ConnectIcon cName={"flex items-center justify-between pt-4"} />
               </div>
             </div>
           </div>
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form
+                action="https://getform.io/f/56c264d4-a3d1-4ce6-b8af-4f7e5d4fb25d"
+                method="POST"
+                encType="multipart/form-data"
+              >
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="name"
                     />
                   </div>
                   <div className="flex flex-col">
@@ -56,7 +61,8 @@ const Contact = () => {
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
+                      type="tel"
+                      name="phone"
                     />
                   </div>
                 </div>
@@ -65,6 +71,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    name="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -72,6 +79,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    name="subject"
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -79,6 +87,7 @@ const Contact = () => {
                   <textarea
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     rows="5"
+                    name="message"
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">

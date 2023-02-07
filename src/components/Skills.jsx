@@ -34,7 +34,7 @@ const Skills = () => {
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
-                  <p key={i} className="flex p-1">
+                  <p key={i} className="flex p-1 gap-2">
                     {skills}
                   </p>
                 );

@@ -10,7 +10,6 @@ const ConnectIcon = ({ cName }) => {
     <div className={cName}>
       <Link
         href={socialMediaLinks.linkedin}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Linkedin"
@@ -19,7 +18,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={socialMediaLinks.github}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Github"
@@ -28,7 +26,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={socialMediaLinks.gitlab}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Gitlab"
@@ -37,7 +34,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={`mailto:${socialMediaLinks.gmail}`}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Email"
@@ -46,7 +42,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={socialMediaLinks.facebook}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Facebook"
@@ -55,7 +50,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={socialMediaLinks.instagram}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Instagram"
@@ -64,7 +58,6 @@ const ConnectIcon = ({ cName }) => {
       </Link>
       <Link
         href={socialMediaLinks.twitter}
-        className="mb-2"
         target="_blank"
         rel="noopener noreferrer"
         title="Twitter"

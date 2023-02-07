@@ -26,20 +26,20 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1UM51hBr7Zb9IfbBrVOYECEDZzPhQ8Q2_/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  instagram: "https://medium.com/@saadpasta",
-  twitter: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/parisandana",
+  linkedin: "https://www.linkedin.com/in/parisandana/",
+  gmail: "parisandana2@gmail.com",
+  gitlab: "https://gitlab.com/parisandana",
+  facebook: "https://www.facebook.com/paris.andana",
+  instagram: "https://www.instagram.com/parisandana/",
+  twitter: "https://twitter.com/parisandana",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true, // Set true to display this section, defaults to false

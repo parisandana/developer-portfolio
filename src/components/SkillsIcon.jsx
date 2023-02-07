@@ -13,7 +13,7 @@ const SkillsIcon = () => {
               name={skills.skillName}
             >
               <i className={skills.skillClass}></i>
-              <p className="text-xs">{skills.skillName}</p>
+              <p className="text-xs font-montserrat">{skills.skillName}</p>
             </li>
           );
         })}

@@ -30,7 +30,7 @@ const Main = () => {
               control tool and handling multiple VPS with Node.js backend.
               Create & maintain RPC blockhain node also AWS Lambda using
               Cloudformation and Serverless Framework. Also learning to be
-              Fullstack developer with Backend focused.
+              Fullstack Developer with Backend focused.
             </p>
             <ConnectIcon
               cName={
