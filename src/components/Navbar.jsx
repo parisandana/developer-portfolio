@@ -4,13 +4,37 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import ConnectIcon from "./ConnectIcon";
 import { useRouter } from "next/router";
 import { greeting } from "@/portfolio";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
+
+  const renderThemeChanger = () => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "light") {
+      return (
+        <i
+          className="fa-solid fa-sun ml-10 w-10 text-lg text-yellow-500 transition-transform"
+          role="button"
+          onClick={() => setTheme("dark")}
+        />
+      );
+    } else {
+      return (
+        <i
+          className="fa-solid fa-moon ml-10 w-10 text-lg text-gray-300 transition-transform"
+          role="button"
+          onClick={() => setTheme("light")}
+        />
+      );
+    }
+  };
 
   useEffect(() => {
     if (
@@ -42,28 +66,29 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-  const contact = document.getElementById("contact");
-
   return (
     <div
       id="navbar"
-      style={{ backgroundColor: `${navBg}` }}
+      // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3] dark:bg-[#1f2937]"
+          : "fixed w-full h-20 z-[100] bg-[#ecf0f3] dark:bg-[#1f2937]"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-10 2xl:px-16 font">
-        <Link href="/" className="text-2xl">
+        <Link href="/" className="text-2xl items-center">
           <span className="text-[#868e96]">&lt;</span>
-          <span className="font-bold font-agustina p-2.5 pt-2 text-3xl text-[#551a8B]">
+          <span className="font-bold font-agustina p-2.5 pt-2 text-3xl text-transparent bg-clip-text bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900">
             Paris Andana
           </span>
           <span className="text-[#868e96]">/&gt;</span>
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <ul
+            // style={{ color: `${linkColor}` }}
+            className="hidden md:flex items-center"
+          >
             <Link href="/">
               <li className="ml-10 text-sm uppercase">Home</li>
             </Link>
@@ -79,6 +104,7 @@ const Navbar = () => {
             <Link href={greeting.resumeLink} target="_blank">
               <li className="ml-10 text-sm uppercase">Resume</li>
             </Link>
+            {renderThemeChanger()}
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu />
@@ -108,7 +134,7 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg drop-shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg drop-shadow-lg shadow-gray-400 dark:shadow-black p-3 cursor-pointer"
               >
                 <AiOutlineClose />
               </div>

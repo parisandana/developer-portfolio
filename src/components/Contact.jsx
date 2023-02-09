@@ -20,7 +20,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <Fade left duration={1000}>
-            <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+            <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 dark:shadow-black rounded-xl p-4">
               <div className="lg:p-4 h-full">
                 <div>
                   <div className="rounded-xl hover:scale-105 ease-in duration-300 w-full h-auto">
@@ -41,7 +41,7 @@ const Contact = () => {
                   </p>
                   <ConnectIcon
                     cName={
-                      "flex items-center justify-between pt-4 overflow-auto"
+                      "flex items-center justify-between py-4 overflow-auto"
                     }
                   />
                 </div>
@@ -50,7 +50,7 @@ const Contact = () => {
           </Fade>
           {/* right */}
           <Fade right duration={1000}>
-            <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+            <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 dark:shadow-black rounded-xl lg:p-4">
               <div className="p-4">
                 <form
                   action="https://getform.io/f/56c264d4-a3d1-4ce6-b8af-4f7e5d4fb25d"
@@ -61,7 +61,7 @@ const Contact = () => {
                     <div className="flex flex-col">
                       <label className="uppercase text-sm py-2">Name</label>
                       <input
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
+                        className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-800"
                         type="text"
                         name="name"
                       />
@@ -71,7 +71,7 @@ const Contact = () => {
                         Phone Number
                       </label>
                       <input
-                        className="border-2 rounded-lg p-3 flex border-gray-300"
+                        className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-800"
                         type="tel"
                         name="phone"
                       />
@@ -80,7 +80,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Email</label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-800"
                       type="email"
                       name="email"
                     />
@@ -88,7 +88,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Subject</label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-800"
                       type="text"
                       name="subject"
                     />
@@ -96,7 +96,7 @@ const Contact = () => {
                   <div className="flex flex-col py-2">
                     <label className="uppercase text-sm py-2">Message</label>
                     <textarea
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 dark:border-gray-800"
                       rows="5"
                       name="message"
                     ></textarea>
@@ -111,7 +111,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="animate-bounce rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="animate-bounce rounded-full shadow-lg shadow-gray-400 dark:shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30} />
             </div>
           </Link>
